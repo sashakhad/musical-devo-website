@@ -2,6 +2,8 @@
 import { BackgroundVideo } from "./components/BackgroundVideo";
 import { FAQ } from "./components/FAQ";
 
+const DEVO_THEME = "mysticism";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-8 text-center text-gray-800">
@@ -11,22 +13,28 @@ export default function Home() {
       <h1 className="mb-2 text-4xl font-bold">Musical Devotional</h1>
 
       {/* Upcoming Event */}
-      <h2 className="mb-2 text-2xl font-semibold">
-        Upcoming Event: October 18th
-      </h2>
-      <div className="mb-4">
-        <p>
-          Join us for our next musical devotional on October 18th at 6:30 PM in
-          Oakland!
-        </p>
-        <p>Dinner will be provided.</p>
+      <div className="my-20 flex flex-col gap-3">
+        <h2 className="mb-2 text-2xl font-semibold">
+          Upcoming Event: October 18th
+        </h2>
+        <div className="mb-4">
+          <p>
+            Join us for our next musical devotional on October 18th at 6:30 PM
+            in Oakland!
+          </p>
+          <p>Dinner will be provided.</p>
+          <p>
+            The theme of this musical devotional is{" "}
+            <strong className="uppercase">{DEVO_THEME}</strong>.
+          </p>
+        </div>
+        <a
+          href="mailto:info@musicaldevo.com"
+          className="mb-8 rounded-full border border-solid border-black px-6 py-4  hover:animate-pulse"
+        >
+          Contact us to RSVP
+        </a>
       </div>
-      <a
-        href="mailto:info@musicaldevo.com"
-        className="mb-8 text-blue-500 underline"
-      >
-        Contact us to RSVP
-      </a>
 
       {/* Sections */}
       <section className="max-w-2xl space-y-8">
@@ -75,9 +83,67 @@ export default function Home() {
           <p>
             Whether you&apos;re into sharing some philosophical wisdom,
             exploring prayers, playing a tune, or just soaking it all in,
-            we&apos;re stoked to have you with us. It&apos;s all about the
-            journey, and we look forward to exploring, sharing, and connecting
-            with you!
+            we&apos;re excited to have you with us. We look forward to
+            exploring, sharing, and connecting with you!
+          </p>
+        </div>
+        {/* Section: What to Bring */}
+        <div className="space-y-4">
+          <h2 className="text-2xl font-semibold">What to Bring</h2>
+          <p>
+            Feel the pull to share something? We welcome it! Bring along a
+            quote, a prayer, a song, or any offering in the spirit of devotion.
+            While any heartfelt contribution is appreciated, offerings related
+            to our theme—<em>{DEVO_THEME}</em>—resonate especially well.
+          </p>
+        </div>
+
+        {/* Section: Agenda */}
+        <div className="space-y-4">
+          <h2 className="text-2xl font-semibold">Agenda</h2>
+          <ul className="list-inside list-disc">
+            <li>
+              <strong>6:30 - 7:30 PM:</strong> Dinner & Arrival
+            </li>
+            <li>
+              <strong>7:30 - 8:30 PM:</strong> Devotional
+            </li>
+            <li>
+              <strong>8:30 PM:</strong> Close & Social
+            </li>
+          </ul>
+        </div>
+
+        {/* Section: Setting & Attitude */}
+        <div className="space-y-4">
+          <h2 className="text-2xl font-semibold">Setting & Attitude</h2>
+          <p>
+            The essence of our gathering is to immerse in the spirit of the
+            devotional. During the devotional portion, we seek an ambiance of
+            contemplation. Let’s savor the readings, the music, and the silence
+            in between. While the urge to discuss may arise, we save deeper
+            conversations for the social time after the devotional, keeping our
+            primary hour serene and focused.
+          </p>
+        </div>
+
+        {/* Section: Learn More about the Bahá'í Faith */}
+        <div className="space-y-4">
+          <h2 className="text-2xl font-semibold">
+            Learn More about the Bahá'í Faith
+          </h2>
+          <p>
+            Curious about the Bahá'í teachings that inspire our devotionals?
+            Dive deeper and explore the Bahá'í Faith.{" "}
+            <a
+              href="https://www.bahai.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              Visit the official website
+            </a>
+            .
           </p>
         </div>
       </section>
