@@ -40,7 +40,7 @@ export function FAQ() {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="flex w-full max-w-xl flex-col rounded-md border border-black p-4 text-left shadow-sm"
+            className="flex w-[350px] flex-col rounded-md border border-black p-4 text-left shadow-sm sm:w-[500px] md:w-[700px]"
           >
             <dt
               className="flex w-full cursor-pointer items-center justify-between"
