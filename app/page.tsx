@@ -8,13 +8,12 @@ const DEVO_THEME = "mysticism";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center scroll-smooth p-8 text-center text-gray-800">
+      <div id="home" />
       <NavBar />
       <BackgroundVideo />
 
       {/* Header */}
-      <h1 id="home" className="mb-2 text-4xl font-bold">
-        Musical Devotional
-      </h1>
+      <h1 className="mb-2 text-4xl font-bold">Musical Devotional</h1>
 
       {/* Upcoming Event */}
       <div className="my-20 flex flex-col gap-3">
