@@ -3,7 +3,7 @@ const sections = ["home", "about", "faq"];
 
 export function NavBar() {
   return (
-    <div className="sticky top-0 z-10 flex w-full justify-end bg-transparent px-5 py-5 text-sm text-black">
+    <div className="invisible sticky top-0 z-10 flex w-full justify-end bg-transparent px-5 py-5 text-sm text-black lg:visible">
       <div className="flex gap-5 sm:gap-10">
         {sections.map((section) => (
           <Link key={section} href={`#${section}`}>
