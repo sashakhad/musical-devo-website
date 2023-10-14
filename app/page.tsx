@@ -41,7 +41,7 @@ export default function Home() {
       </div>
 
       {/* Sections */}
-      <section id="about" className="max-w-2xl space-y-8">
+      <section id="about" className="my-40 max-w-2xl space-y-8">
         {/* Section: Welcome */}
         <div className="space-y-4">
           <h2 className="text-2xl font-semibold">

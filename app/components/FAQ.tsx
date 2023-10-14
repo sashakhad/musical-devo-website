@@ -32,18 +32,18 @@ const faqs = [
 export function FAQ() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
   return (
-    <section className="mt-12 w-full max-w-2xl text-start">
+    <section className="mb-40 mt-40 w-full max-w-2xl text-start">
       <h2 className="mb-6 text-center text-2xl font-semibold">
         Frequently Asked Questions
       </h2>
-      <dl className="space-y-4">
+      <dl className="max-w-xl space-y-4">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="rounded-md border p-4 text-left shadow-sm"
+            className="flex w-full max-w-xl flex-col rounded-md border border-black p-4 text-left shadow-sm"
           >
             <dt
-              className="items-left flex cursor-pointer justify-between"
+              className="flex w-full cursor-pointer items-center justify-between"
               onClick={() =>
                 setExpandedIndex(expandedIndex === index ? null : index)
               }
