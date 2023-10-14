@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Raleway } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const railway = Raleway({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-gradient-to-t from-[#FF7B7B] from-10% to-[#FDEFFA] ${inter.className}`}
+        className={`bg-gradient-to-t from-[#FF7B7B] from-10% to-[#FDEFFA] ${railway.className}`}
       >
         {children}
       </body>
